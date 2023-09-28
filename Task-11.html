@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task-5</title>
+    <style>
+        input{
+            margin-bottom: 10px;
+            border:2.5px solid red;
+        }
+        textarea{
+            border: 2.5px solid red;
+            vertical-align:top;
+        }
+        label{
+            display: inline-block;
+            width:200px;
+            text-align:right;
+        }
+        .center{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="center">
+            <div>
+                <label><b>Name:</b></label>
+                <input id="name" type="text" size="20">
+                <span class="error" style="color:red;">This field is required</span>
+            </div>
+            <br>
+            <div>
+                <label><b>Email:</b></label>
+                <input type="email" size="20">
+                <span class="error" style="color:red;">A valid email address is required</span>
+            </div>
+            <br>
+            <div>
+                <label><b>Website:</b></label>
+                <input type="url" size="20">
+                <span class="error" style="color:red;">A valid url address is required</span>
+            </div>
+            <br>
+            <div>
+                <label><b>Message:</b></label>
+                <textarea rows="4" cols="23"></textarea>
+                <span class="error" style="color:red;">This field is required</span>
+            </div>
+            <br>
+            <div style="padding-left:200px;">
+                <button>Submit</button>
+            </div>
+            <p id="demo"></p>                
+        </div>
+    </form>
+</body>
+</html>

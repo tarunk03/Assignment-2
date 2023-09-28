@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task-7</title>
+    <style>
+        h1,div{
+            text-align: center;
+            color: blue;
+        }
+        img{
+            padding-top: 100px;
+            animation: train 4s linear infinite ;
+            animation-play-state: paused;
+        }
+        @keyframes train{
+            0% {padding-left: 0%;}
+            100% {padding-left: 100%;}
+        }
+    </style>
+</head>
+<script>
+    function Start(){
+        document.getElementById("train").style.animationPlayState="running";
+    }
+    function Stop(){
+        document.getElementById("train").style.animationPlayState="paused";
+    }
+</script>
+<body>
+    <div>
+        <img id="train" src="./Train.png" alt="Train" width="500">
+        <h1>Click the following buttons to handle animation</h1>
+        <button onclick="Start()">Start</button>
+        <button onclick="Stop()">Stop</button>
+    </div>
+</body>
+</html>

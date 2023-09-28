@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Task-8</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <style>
+        input{
+            margin-bottom: 2px;
+        }
+        label{
+            display: inline-block;
+            width:200px;
+            text-align:right;
+        }
+        .center{
+            position: absolute;
+            top:50%;
+            left:45%;
+            transform: translate(-45%,-50%);
+            border:1px solid black;
+            padding: 25px 20px 10px 20px;
+            background-color:rgba(255, 99, 71, 0.2);
+        }
+
+        .child{
+            position:relative;
+            transform: translate(30%,30%);
+            vertical-align:top;
+        }
+        div.a{
+            text-align: right;
+        }
+        button{
+            color: white;
+            background-color:red; 
+            width:100px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="center">
+            <center><legend><h1 style="color:blue;"><b>Registration Form</b></h1></legend></p></center>
+            <div>
+                 <label><b>First Name</b></label>
+                 <input type="text" size="40">
+                 <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                <label><b>Last Name</b></label>
+                <input type="text" size="40">
+                <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                    <label><b>Email</b></label>
+                    <input type="email" size="40">
+                    <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                    <label><b>Password</b></label>
+                    <input type="password" size="40">
+                    <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                    <label><b>Re-enter Password</b></label>
+                    <input type="password" size="40">
+                    <span class="error" style="color:red;">POOR OR MISMATCH</span>
+            </div>
+            <br>
+            <div>
+                    <label><b>Gender</b></label>
+                    <span class="child">
+                        <input type="radio" name="gender">Male          
+                        <input type="radio" name="gender">Female
+                    </span>
+                    <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                    <label><b>Age</b></label>
+                    <input type="number" size="40">
+                    <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                    <label><b>Phone Number</b></label>
+                    <input type="tel" size="40">
+                    <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                    <label><b>Address</b></label>
+                    <textarea cols="43" row="6"></textarea>
+                    <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                    <label><b>State</b></label>
+                    <input type="text" size="40">
+                    <span class="error" style="color:red;">POOR</span>
+            </div>
+            <br>
+            <div>
+                <label><b>Country</b></label>
+                <span>
+                    <select>
+                            <option>Choose your country</option>
+                            <option>India</option>
+                            <option>Afghanistan</option>
+                            <option>Brazil</option>
+                            <option>France</option>
+                    </select>
+                </span>
+            </div>
+            <br>
+            <div>
+                    <label><b>Languages Known</b></label>
+                    <span>
+                            <input type="checkbox" name="languages known " value="English">English
+                            <input type="checkbox" name="languages known" value="Kannada">Kannada
+                            <input type="checkbox" name="languages known" value="Hindi">Hindi
+                            <input type="checkbox" name="languages known" value="Telugu">Telugu
+                        </span>
+            </div>
+            <br>
+            <div>
+                    <input type="checkbox">Hereby I declare all the given details are true
+            </div>
+            <br>
+            <div class="a">
+                <label>Log in to <a href="https://ethnus.com/" target="_blank">Ethnus </a>website</label>
+            
+            </div>
+            <br>
+            <div>
+                   <center><button>Register</button></center>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
